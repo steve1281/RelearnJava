@@ -14,7 +14,6 @@ public class GoodByeWorld {
      * constructor - no scope, no return type
      */
     GoodByeWorld() {
-        System.out.println("Guess what, you created an instance of Good Bye world!");
     }
     
     /**
