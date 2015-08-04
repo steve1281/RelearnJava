@@ -10,7 +10,7 @@ package helloworld;
  * @author steve
  */
 public class GoodByeWorld {
-    // REV-02 : Rremoved the empty constructor.
+    // REV-02 : Removed the empty constructor.
  
     /**
      * public method, return type of void.
@@ -19,3 +19,4 @@ public class GoodByeWorld {
         System.out.println("So, goodbye then. :-(");
     }
 }
+
