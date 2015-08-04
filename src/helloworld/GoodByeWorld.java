@@ -10,12 +10,8 @@ package helloworld;
  * @author steve
  */
 public class GoodByeWorld {
-    /**
-     * constructor - no scope, no return type
-     */
-    GoodByeWorld() {
-    }
-    
+    // REV-02 : Rremoved the empty constructor.
+ 
     /**
      * public method, return type of void.
      */
