@@ -10,12 +10,8 @@ package helloworld;
  * @author steve
  */
 public class GoodByeWorld {
-    /**
-     * constructor - no scope, no return type
-     */
-    GoodByeWorld() {
-    }
-    
+    // REV-02 : Removed the empty constructor.
+ 
     /**
      * public method, return type of void.
      */
@@ -23,3 +19,4 @@ public class GoodByeWorld {
         System.out.println("So, goodbye then. :-(");
     }
 }
+
