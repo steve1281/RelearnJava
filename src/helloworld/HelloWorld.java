@@ -8,6 +8,7 @@ package helloworld;
 
 import chap4.Student;
 import chap4.Book;
+import chap4.Course;
         
 
 
@@ -17,6 +18,40 @@ import chap4.Book;
  */
 public class HelloWorld {
 
+    
+    public static void p(String l) {
+        System.out.println(l);
+    }
+    
+    public static void studentCourse() {
+        p("Welcome to the course administration program");
+        p("--------------------------------------------");
+        p("");
+        p("Creating two courses.");
+        Course courseA = new Course("First Course");
+        Course courseB = new Course("Second Course");
+        p(" - courseA ID is" + courseA.id);
+        p(" - courseA Name is "+ courseA.name);
+        p(" - courseB ID is" + courseB.id);
+        p(" - courseB Name is "+ courseB.name);
+        p("");
+        p("Creating two students");
+        Student student1  = new Student("Marc","Smith");
+        Student student2 = new Student("Sophie","Smith");
+        p(" - student1 ID is:"+student1.id);
+        p(" - student1 Name is:"+student1.getFirstName() + " " + student1.getLastName());
+        p(" - student2 ID is:"+student2.id);
+        p(" - student2 Name is:"+student2.getFirstName() + " " + student2.getLastName());
+        p("");
+        p("Registering for courses.");
+        student1.registerForCourse(courseA);
+        student1.registerForCourse(courseB);
+        courseA.registerStudent(student2);
+        p("- courseA number of students: "+courseA.nrOfRegisteredStudents());
+        p("- courseB number of students: "+courseB.nrOfRegisteredStudents());
+        
+    }
+            
     /**
      * @param args the command line arguments
      */
@@ -27,13 +62,7 @@ public class HelloWorld {
         // and then open and run
         bye.sayIt();
         
-        Student firstStudent  = new Student("Marc","Smith");
-        Student secondStudent = new Student("Sophie","Smith");
-        
-        System.out.println("second student is "+secondStudent.firstName);
-        
-        
-        Book book1= new Book("Beginnaing Java"), book2 = new Book("Catcher in the Rye");
+        Book book1= new Book("Beginning Java"), book2 = new Book("Catcher in the Rye");
 
         book1.authors = new String[] {
             "Bart Baesens",
@@ -54,8 +83,7 @@ public class HelloWorld {
         Book.maxAmountOfPages = 2000;
         System.out.println("OK, increasing the max page count: " + Book.maxAmountOfPages);
         
-        
-        
+        studentCourse();
         
                 
     }

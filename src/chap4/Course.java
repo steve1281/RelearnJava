@@ -12,29 +12,29 @@ import java.util.HashSet;
  */
 public class Course {
     static int nextId = 0;
-    final int id;
-    final String name;
-    final HashSet<Student> registeredStudents =
+    public final int id;
+    public final String name;
+    public final HashSet<Student> registeredStudents =
             new HashSet<Student>();
     
-    Course(String n) {
+    public Course(String n) {
         id = nextId;
         nextId++;
         name = n;
     }
-    String getName() {
+    public String getName() {
         return name;
     }
-    void registerStudent(Student s) {
+    public void registerStudent(Student s) {
         registeredStudents.add(s);
     }
-    void unregisterStudent(Student s){
+    public void unregisterStudent(Student s){
         registeredStudents.remove(s);
     }
-    HashSet<Student> registeredStudents() {
+    public HashSet<Student> registeredStudents() {
         return registeredStudents;
     }
-    int nrIfRegisteredStudents() {
+    public int nrOfRegisteredStudents() {
         return registeredStudents.size();
     }
 }

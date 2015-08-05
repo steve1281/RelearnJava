@@ -22,16 +22,16 @@ public class Student {
         firstName = fn;
         lastName = ln;
     }
-    String getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
-    String getLastName() {
+    public String getLastName() {
         return lastName;
     }
-    void registerForCourse(Course c) {
+    public void registerForCourse(Course c) {
         c.registerStudent(this);
     }
-    void unregisterForCourse(Course c) {
+    public void unregisterForCourse(Course c) {
         c.unregisterStudent(this); 
     }
 }
