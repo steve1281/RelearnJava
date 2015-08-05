@@ -9,7 +9,7 @@ package helloworld;
 import chap4.Student;
 import chap4.Book;
 import chap4.Course;
-        
+import chap4.StringTester;        
 
 
 /**
@@ -90,6 +90,9 @@ public class HelloWorld {
         System.out.println("OK, increasing the max page count: " + Book.maxAmountOfPages);
         
         studentCourse();
+        
+        //StringTester st = new StringTester();
+        //st.runner();
         
                 
     }
