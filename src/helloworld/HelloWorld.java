@@ -57,6 +57,12 @@ public class HelloWorld {
      */
     public static void main(String[] args) {
         System.out.println("Welcome back to Java Steve :-)");
+        p("You have supplied "+args.length+" arguments..");
+        for (int i=0;i<args.length;i++) {
+            p("Argument "+i+" equals: "+ args[i]);
+        }
+        p("");
+        
         // create an instance of GoodByWorld
         GoodByeWorld bye = new GoodByeWorld();
         // and then open and run
