@@ -6,7 +6,8 @@
  */
 package helloworld;
 
-import Chap4.Student;
+import chap4.Student;
+import chap4.Book;
         
 
 
@@ -34,6 +35,31 @@ public class HelloWorld {
         secondStudent.firstName  = "Sophie";
         
         System.out.println("second student is "+secondStudent.firstName);
+        
+        
+        Book book1= new Book("Beginnaing Java"), book2 = new Book("Catcher in the Rye");
+
+        book1.authors = new String[] {
+            "Bart Baesens",
+            "Aimee Backiel",
+            "Seppe vanden Brouke"
+        };
+
+        book2.authors = new String[] {"J.D. Salinger"};
+        
+        // example
+        Book superLargeBook = new Book("Super Large Boring Book");
+        System.out.println("I have a book here with the title:" + superLargeBook.title);
+        System.out.println("Written by:" + superLargeBook.authors);
+        System.out.println("Released in:" + superLargeBook.yearReleased);
+        System.out.println("With number of pages:" + superLargeBook.nrOfPages);
+        
+        System.out.println("However, we only support book with max. pages: " + Book.maxAmountOfPages);
+        Book.maxAmountOfPages = 2000;
+        System.out.println("OK, increasing the max page count: " + Book.maxAmountOfPages);
+        
+        
+        
         
                 
     }

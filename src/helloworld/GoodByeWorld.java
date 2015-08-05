@@ -19,4 +19,3 @@ public class GoodByeWorld {
         System.out.println("So, goodbye then. :-(");
     }
 }
-

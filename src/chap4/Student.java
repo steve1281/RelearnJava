@@ -3,7 +3,7 @@
  * It is not, and is not intended to be, production grade code.   * 
  * Use at your own risk.  * 
  */
-package Chap4;
+package chap4;
 
 /**
  *
