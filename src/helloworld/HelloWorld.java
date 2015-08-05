@@ -27,12 +27,8 @@ public class HelloWorld {
         // and then open and run
         bye.sayIt();
         
-        Student firstStudent  = new Student();
-        Student secondStudent = new Student();
-        firstStudent.id = 1;
-        firstStudent.firstName = "Marc";
-        secondStudent.id = 2;
-        secondStudent.firstName  = "Sophie";
+        Student firstStudent  = new Student("Marc","Smith");
+        Student secondStudent = new Student("Sophie","Smith");
         
         System.out.println("second student is "+secondStudent.firstName);
         

@@ -10,21 +10,28 @@ package chap4;
  * @author steve
  */
 public class Student {
-    public int id;
-    public String firstName;
-    public String lastName;
-    public int birthYear, birthMonth, birthDay;
+    static int nextId = 0;
     
-    boolean isBirthday() {
-        // Return true if it's the student's birthday today,
-        return false;
-    }
-    void giveWarning(boolean isFinalWarning) {
-        // You really need to study harder!
-    }
+    final public int id;
+    final public String firstName, lastName;
+    //public int birthYear, birthMonth, birthDay;
     
-    int numberOfFriends() {
-        // Return the number of friends the student has
-        return 0;
+    public Student(String fn, String ln) {
+        id = nextId;
+        nextId++;
+        firstName = fn;
+        lastName = ln;
+    }
+    String getFirstName() {
+        return firstName;
+    }
+    String getLastName() {
+        return lastName;
+    }
+    void registerForCourse(Course c) {
+        c.registerStudent(this);
+    }
+    void unregisterForCourse(Course c) {
+        c.unregisterStudent(this); 
     }
 }
