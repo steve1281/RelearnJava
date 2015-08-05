@@ -10,7 +10,9 @@ import chap4.Student;
 import chap4.Book;
 import chap4.Course;
 import chap4.StringTester;        
-
+import chap4.CollectionsTester;
+import chap4.ForLoops;
+import chap4.Switch;
 
 /**
  *
@@ -94,6 +96,15 @@ public class HelloWorld {
         //StringTester st = new StringTester();
         //st.runner();
         
+        CollectionsTester ct = new CollectionsTester();
+        ct.runner();
+        
+        ForLoops fl = new ForLoops();
+        fl.runner();
+        
+        Switch sw = new Switch();
+        sw.runner();
+         
                 
     }
     
