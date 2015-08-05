@@ -13,6 +13,7 @@ import chap4.StringTester;
 import chap4.CollectionsTester;
 import chap4.ForLoops;
 import chap4.Switch;
+import chap6.LoggerExample;
 
 /**
  *
@@ -104,7 +105,9 @@ public class HelloWorld {
         
         Switch sw = new Switch();
         sw.runner();
-         
+        
+        LoggerExample lg = new LoggerExample();
+        lg.runner();
                 
     }
     
