@@ -6,13 +6,13 @@
 					- %msg%n"/>
 		</Console>
 		<File name="ApacheLog-Info" filename=
-				"ApacheLogging_Info.log">
+				"logs/ApacheLogging_Info.log">
 			<PatternLayout>
 				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1}
 						- %msg%n</pattern>
 			</PatternLayout>
 		</File>
-		<File name="ApacheLog-Warn" filename="src/ApacheLogging_Warn.log">
+		<File name="ApacheLog-Warn" filename="logs/ApacheLogging_Warn.log">
 			<PatternLayout>
 				<pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1}
 						- %msg%n</pattern>

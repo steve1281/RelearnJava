@@ -107,8 +107,8 @@ public class HelloWorld {
         Switch sw = new Switch();
         sw.runner();
         
-        LoggerExample lg = new LoggerExample();
-        lg.runner();
+        //LoggerExample lg = new LoggerExample();
+        //lg.runner();
 
         ApacheLogging alg = new ApacheLogging();
         alg.runner();
