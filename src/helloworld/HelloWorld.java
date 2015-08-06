@@ -13,6 +13,7 @@ import chap4.StringTester;
 import chap4.CollectionsTester;
 import chap4.ForLoops;
 import chap4.Switch;
+import chap6.ApacheLogging;
 import chap6.LoggerExample;
 
 /**
@@ -108,7 +109,10 @@ public class HelloWorld {
         
         LoggerExample lg = new LoggerExample();
         lg.runner();
-                
+
+        ApacheLogging alg = new ApacheLogging();
+        alg.runner();
+
     }
     
 }
