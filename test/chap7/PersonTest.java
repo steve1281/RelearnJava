@@ -4,26 +4,16 @@
  * Use at your own risk.  * 
  */
 package chap7;
-import static org.junit.Assert.*;
-import static org.junit.contrib.java.lang.system.TextFromStandardInputStream.*;
-
-import java.io.ByteArrayOutputStream;
-import java.io.PrintStream;
 import java.time.LocalDate;
-import java.time.Month;
 import java.time.Period;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
-import org.junit.Test;
 import static org.junit.Assert.*;
-import org.junit.Rule;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.SystemOutRule;
-import org.junit.contrib.java.lang.system.TextFromStandardInputStream;
-import org.apache.commons.io.output.TeeOutputStream;
 import org.junit.matchers.JUnitMatchers;
 
 /**

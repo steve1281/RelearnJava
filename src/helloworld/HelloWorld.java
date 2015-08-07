@@ -15,6 +15,7 @@ import chap4.ForLoops;
 import chap4.Switch;
 import chap6.ApacheLogging;
 import chap6.LoggerExample;
+import chap7.AccountManager;
 
 /**
  *
@@ -112,7 +113,9 @@ public class HelloWorld {
 
         ApacheLogging alg = new ApacheLogging();
         alg.runner();
-
+            
+        AccountManager am = new AccountManager();
+        am.runner();
     }
     
 }
