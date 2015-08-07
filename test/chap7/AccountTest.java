@@ -20,7 +20,7 @@ import org.junit.contrib.java.lang.system.SystemOutRule;
  * @author steve
  */
 public class AccountTest {
-    // creat a default account to be used.
+    // create a default account to be used.
     Account instance = new Account("Steve","10.00");
 
     public AccountTest() {
@@ -43,8 +43,7 @@ public class AccountTest {
     }
     
     @Rule
-    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
-    //        assertThat(systemOutRule.getLog(), JUnitMatchers.containsString("Steve Smith"));        
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();    
 
     /**
      * Test of getName method, of class Account.
@@ -100,7 +99,7 @@ public class AccountTest {
     
     @Test(expected=IllegalArgumentException.class)
     public void testWithdrawWithException() {
-        System.out.println("withdraw");
+        System.out.println("withdraw exception");
         String withdrawl = "15.00";
         instance.withdraw(withdrawl);    
     }
@@ -122,7 +121,7 @@ public class AccountTest {
      */
     @Test(expected=IllegalArgumentException.class)
     public void testDepositWithException() {
-        System.out.println("deposit");
+        System.out.println("deposit exception");
         String deposit = "-15.00";
         instance.deposit(deposit);
     }

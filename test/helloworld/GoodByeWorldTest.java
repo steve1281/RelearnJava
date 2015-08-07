@@ -11,6 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Rule;
+import org.junit.contrib.java.lang.system.SystemOutRule;
+import org.junit.matchers.JUnitMatchers;
 
 /**
  *
@@ -36,6 +39,9 @@ public class GoodByeWorldTest {
     @After
     public void tearDown() {
     }
+    
+    @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 
     /**
      * Test of sayIt method, of class GoodByeWorld.
@@ -45,8 +51,7 @@ public class GoodByeWorldTest {
         System.out.println("sayIt");
         GoodByeWorld instance = new GoodByeWorld();
         instance.sayIt();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        assertThat(systemOutRule.getLog(), JUnitMatchers.containsString("goodbye"));        
     }
     
 }

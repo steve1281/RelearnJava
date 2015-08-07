@@ -11,6 +11,9 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Rule;
+import org.junit.contrib.java.lang.system.SystemOutRule;
+import org.junit.matchers.JUnitMatchers;
 
 /**
  *
@@ -37,16 +40,17 @@ public class HelloWorldTest {
     public void tearDown() {
     }
 
+    @Rule
+    public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
+
     /**
-     * Test of main method, of class HelloWorld.
+     * Test of runner method, of class HelloWorld.
      */
     @Test
-    public void testMain() {
-        System.out.println("main");
-        String[] args = null;
-        HelloWorld.main(args);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+    public void testRunner() {
+        System.out.println("runner");
+        HelloWorld.runner();
+        assertThat(systemOutRule.getLog(), JUnitMatchers.containsString("Steve"));        
     }
     
 }
