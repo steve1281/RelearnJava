@@ -95,5 +95,17 @@ public class PersonTest {
         int result = instance.calculateAge(year, month, day);
         assertEquals(expResult, result);
     }
+
+    /**
+     * Test of getName method, of class Person.
+     */
+    @Test
+    public void testGetName() {
+        System.out.println("getName");
+        Person instance = new Person("Steve Smith", 1967,6,1);
+        String expResult = "Steve Smith";
+        String result = instance.getName();
+        assertEquals(expResult, result);
+    }
     
 }

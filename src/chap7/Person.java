@@ -43,5 +43,8 @@ public class Person {
         Period p = Period.between(this.birthdate, LocalDate.of(year, month, day));
         return p.getYears();
     }
-
+    public String getName()
+    {
+        return this.name;
+    }
 }

@@ -16,6 +16,7 @@ import chap4.Switch;
 import chap6.ApacheLogging;
 import chap6.LoggerExample;
 import chap7.AccountManager;
+import chap7.Employee;
 
 /**
  *
@@ -119,6 +120,8 @@ public class Program {
         ApacheLogging.runner();
             
         AccountManager.runner();
+        
+        Employee.runner();
     }
     
 }
