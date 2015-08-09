@@ -22,6 +22,7 @@ import chap8.FormattingOutput;
 import chap8.JavaInput;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
+import chap8.ShowGroceriesV3;
 
 /**
  *
@@ -137,6 +138,8 @@ public class Program {
         FileCopier.runner();
         
         FormattingOutput.runner();
+        
+        ShowGroceriesV3.runner();
     }
     
 }
