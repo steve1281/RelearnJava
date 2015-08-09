@@ -17,6 +17,10 @@ import chap6.ApacheLogging;
 import chap6.LoggerExample;
 import chap7.AccountManager;
 import chap7.Employee;
+import chap8.FileCopier;
+import chap8.JavaInput;
+import chap8.ShowGroceries;
+import chap8.ShowGroceriesV2;
 
 /**
  *
@@ -122,6 +126,14 @@ public class Program {
         AccountManager.runner();
         
         Employee.runner();
+        
+        ShowGroceries.runner();
+        
+        //JavaInput.runner();
+        p("--------------------------------------------------");
+        ShowGroceriesV2.runner();
+        
+        FileCopier.runner();
     }
     
 }
