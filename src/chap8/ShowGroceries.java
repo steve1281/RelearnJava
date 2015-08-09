@@ -17,7 +17,7 @@ public class ShowGroceries {
         BufferedReader br = null;
         FileReader fr = null;
         try {
-            fr = new FileReader("/home/steve/java/HelloWorld/src/groceries.txt");
+            fr = new FileReader("groceries.txt");
             br = new BufferedReader(fr);
             String line;
             while ((line = br.readLine()) != null){

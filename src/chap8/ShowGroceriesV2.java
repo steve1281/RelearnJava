@@ -25,7 +25,7 @@ public class ShowGroceriesV2 {
         
         try {
             groceries = Files.readAllLines(
-                Paths.get("/home/steve/java/HelloWorld/src/groceries.txt"), 
+                Paths.get("groceries.txt"), 
                     Charset.defaultCharset());
         } catch (IOException | SecurityException e) {
             e.printStackTrace();

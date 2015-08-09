@@ -1,0 +1,6 @@
+apples
+oranges
+bread
+milk
+cereal
+ketchup

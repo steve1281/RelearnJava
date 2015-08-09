@@ -18,7 +18,7 @@ public class FileCopier {
         FileInputStream in = null;
         FileOutputStream out = null;
         try {
-            in = new FileInputStream("/home/steve/java/HelloWorld/src/groceries.txt");
+            in = new FileInputStream("groceries.txt");
             out = new FileOutputStream("groceries (copy).txt");
             int c;
             while ((c=in.read()) != -1){
