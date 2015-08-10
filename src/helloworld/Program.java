@@ -20,6 +20,7 @@ import chap7.Employee;
 import chap8.FileCopier;
 import chap8.FormattingOutput;
 import chap8.JavaInput;
+import chap8.ReadName;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
 import chap8.ShowGroceriesV3;
@@ -140,6 +141,8 @@ public class Program {
         FormattingOutput.runner();
         
         ShowGroceriesV3.runner();
+        
+        ReadName.runner();
     }
     
 }
