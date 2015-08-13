@@ -20,6 +20,7 @@ import chap7.Employee;
 import chap8.FileCopier;
 import chap8.FormattingOutput;
 import chap8.JavaInput;
+import chap8.LineReverser;
 import chap8.ReadName;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
@@ -78,6 +79,10 @@ public class Program {
         }
         p("");
         
+        
+        //p("(if a file was  argued, it will be parsed. Other wise, enter lines of data, blank to end.");
+        //LineReverser.runner(args);
+
         // static call to runner
         HelloWorld.runner();
         
