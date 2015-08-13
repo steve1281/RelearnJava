@@ -19,12 +19,16 @@ import chap7.AccountManager;
 import chap7.Employee;
 import chap8.FileCopier;
 import chap8.FormattingOutput;
+import chap8.GetPassword;
 import chap8.JavaInput;
 import chap8.LineReverser;
 import chap8.ReadName;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
 import chap8.ShowGroceriesV3;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -79,10 +83,17 @@ public class Program {
         }
         p("");
         
-        
-        //p("(if a file was  argued, it will be parsed. Other wise, enter lines of data, blank to end.");
-        //LineReverser.runner(args);
+             //p("(if a file was  argued, it will be parsed. Other wise, enter lines of data, blank to end.");
+            //LineReverser.runner(args);
+      
+        try {
 
+            GetPassword.runner();
+        } catch (IOException ex) {
+            //Logger.getLogger(Program.class.getName()).log(Level.SEVERE, null, ex);
+            ex.printStackTrace();
+        }
+        
         // static call to runner
         HelloWorld.runner();
         
