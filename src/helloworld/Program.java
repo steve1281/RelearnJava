@@ -26,6 +26,8 @@ import chap8.ReadName;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
 import chap8.ShowGroceriesV3;
+import chap8.ShowGroceriesV4;
+import chap8.ShowGroceriesV5;
 import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -85,7 +87,7 @@ public class Program {
         
              //p("(if a file was  argued, it will be parsed. Other wise, enter lines of data, blank to end.");
             //LineReverser.runner(args);
-      
+       /*
         try {
 
             GetPassword.runner();
@@ -93,6 +95,12 @@ public class Program {
             //Logger.getLogger(Program.class.getName()).log(Level.SEVERE, null, ex);
             ex.printStackTrace();
         }
+        */
+        
+        ShowGroceriesV5.runner();
+        System.exit(1);
+        
+        ShowGroceriesV4.runner();
         
         // static call to runner
         HelloWorld.runner();
