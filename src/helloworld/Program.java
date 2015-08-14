@@ -23,6 +23,7 @@ import chap8.GetPassword;
 import chap8.JavaInput;
 import chap8.LineReverser;
 import chap8.ReadName;
+import chap8.ShowDirectory;
 import chap8.ShowGroceries;
 import chap8.ShowGroceriesV2;
 import chap8.ShowGroceriesV3;
@@ -96,6 +97,11 @@ public class Program {
             ex.printStackTrace();
         }
         */
+        
+        
+        ShowDirectory.runner();
+        System.exit(1);
+        
         
         ShowGroceriesV5.runner();
         System.exit(1);
